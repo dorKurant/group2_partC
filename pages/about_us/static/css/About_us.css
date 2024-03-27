@@ -1,0 +1,32 @@
+
+#input-text{
+    font-size: 19px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.6em;
+    border: 9px solid #A7F0BA;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.heart{
+    width: 25%;
+    display: flex;
+    background: none;
+    border: none;
+    animation: growShrink 1s ease-in-out forwards;
+    margin: 0 auto;
+}
+
+@keyframes growShrink {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+/*#house{*/
+/*    width: 80px;*/
+/*    background: none;*/
+/*    border: none;*/
+/*}*/

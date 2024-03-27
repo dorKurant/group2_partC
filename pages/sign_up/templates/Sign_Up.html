@@ -1,0 +1,29 @@
+{% extends ('Base.html') %}
+{% block styles %}
+    {{ super() }}
+<link rel="stylesheet" href="{{ url_for('sign_up.static',filename='css/sign_up.css') }}"/>
+{% endblock %}
+
+
+
+    {% block main_block %}
+{#      id="form_"   class="input-group"#}
+        <form   action="/db_insert" method="GET">
+            <div class="input-container input-group">
+                {{ message }}
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                <input type="text" id="userName" name="userName" placeholder="User Name">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="email" id="universityMail" name="universityMail" placeholder="University Mail">
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                <input type="text" id="address" name="address" placeholder="Address">
+                <div id="msg" class="error"></div>
+                <button class=custom-button type="submit" value="submit" > submit </button>
+            </div>
+        </form>
+    {% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('sign_up.static', filename='js/sign_up.js') }}"></script>
+{% endblock %}

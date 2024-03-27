@@ -1,0 +1,45 @@
+{% extends ('Base.html') %}
+
+{% block styles %}
+    {{ super() }}
+<link rel="stylesheet" href="{{ url_for('contact_info.static',filename='css/contact_info.css') }}"/>
+{% endblock %}
+
+<body>
+    {% block main_block %}
+      <form action="" method="GET" class="input-group">
+
+
+
+          {% for x in my_list %}
+          <div class="contact">
+              <div class="contact-details">
+                <p>User Name: {{ x.userName }}</p>
+{#                <p> request :{{ x.reques }} </p>#}
+              </div>
+            <input type ="submit" name="request" value={{x.reques}} class="choose-btn"></input>
+          </div>
+
+          {% endfor %}
+
+    </form>
+    {% endblock %}
+</body>
+
+{#<body>#}
+{#    {% block main_block %}#}
+{#        <form action="{{ url_for('contact_info.static') }}" method="POST" class="input-group">#}
+{#            {% for x in my_list %}#}
+{#            <div class="contact">#}
+{#                <div class="contact-details">#}
+{#                    <p>User Name: {{ x.userName }}</p>#}
+{#                    <p>Request: {{ x.request }}</p>#}
+{#                </div>#}
+{#                <input type="hidden" name="user_name" value="{{ x.userName }}">#}
+{#                <input type="hidden" name="request" value="{{ x.request }}">#}
+{#                <input type="submit" value="Choose" class="choose-btn">#}
+{#            </div>#}
+{#            {% endfor %}#}
+{#        </form>#}
+{#    {% endblock %}#}
+{#</body>#}

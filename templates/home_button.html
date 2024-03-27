@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="../static/css/styles.css">
+
+{#{{ session.get('logged_in') }}#}
+{#{{ session}}#}
+
+    {% if session.get('logged_in')%}
+        <a class="house" type="button" href="/SFS" onclick="">
+            <img src="{{ url_for('static', filename='media/img/hous.png') }}" alt="house_image" class="house">
+        </a>
+        <a id="log_out" href="/logout">Log out</a>
+    {% else %}
+        <a class="house" type="button" href="/Log_in" onclick="">
+            <img src="{{ url_for('static', filename='media/img/hous.png') }}" alt="house_image" class="house">
+        </a>
+{%endif%}

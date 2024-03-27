@@ -1,0 +1,44 @@
+
+.Round_writing{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    display: block;
+
+}
+img{
+    width: 170px; /* Set a consistent width for all images */
+    height: 210px;
+    transition: width 0.3s, height 0.3s; /* Optional: Add a smooth transition effect */
+}
+
+.imgButton{
+    object-fit: cover;
+    background-color: transparent;
+    border: none;
+}
+
+
+.login-container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    flex-basis: 35px;
+    grid-column-start: 2;
+    grid-column-end:9;
+    grid-row-start:3;
+    grid-row-end: 10;
+}
+

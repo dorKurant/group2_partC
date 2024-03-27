@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+{% block page_head %}
+        <title> {{ pagename }} </title>
+
+    {% block page_head_meta %}
+        <base href="/"/>
+        <meta charset="UTF-8">
+    {% endblock %}
+
+    {% block home_button %}
+        {% include ('home_button.html') %}
+    {% endblock %}
+
+    {% block styles %}
+                <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
+    {% endblock %}
+{% endblock %}
+</head>
+
+<body>
+
+    {% block Main_Title %}
+        {% include('Main_Title.html') %}
+    {% endblock %}
+
+
+    {% block main_block %}
+    {% endblock %}
+
+    {% block page_body_js %}
+    {% endblock %}
+
+
+</body>
+
+<footer>
+    {% block page_body_footer %}
+
+    {% endblock %}
+</footer>
+

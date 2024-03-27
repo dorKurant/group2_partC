@@ -1,0 +1,42 @@
+body{
+    background: #36B3B8;
+    color: white;
+    font-family: Terbuchet, sans-serif;
+}
+
+header{
+    font-size: 70px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+}
+
+#log_out {
+    background-color: #4e5f60; /* Red background color (change as needed) */
+    color: #fff; /* White text color */
+    padding: 10px 10px; /* Padding around the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    position: fixed; /* Fixed position */
+    top: 20px; /* 20 pixels from the top */
+    right: 30px; /* 20 pixels from the right */
+    /*z-index: 9999; !* Ensure it's on top of other elements *!*/
+}
+
+title{
+    font-size: 100px;
+}
+
+ .house{
+    /width: 10px;/
+    /height:10px;/
+    background: none;
+    /border: none;/
+}
+ .house img{
+     width: 80px;
+     height:80px;
+}
+

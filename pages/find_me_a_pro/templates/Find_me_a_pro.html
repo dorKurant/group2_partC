@@ -1,0 +1,80 @@
+{% extends ('Base.html') %}
+
+{% block styles %}
+    {{ super() }}
+<link rel="stylesheet" href="{{ url_for('find_me_a_pro.static',filename='css/find_me_a_pro.css') }}"/>
+{% endblock %}
+
+
+
+{% block main_block %}
+    <main>
+         <div id="Doggsitter">
+            <span class="Round_writing" > Doggsitter </span>
+{#              <a class="imgButton" href="{{ url_for("/Contact_info.static", category='Doggsitter') }}">#}
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/Doggsitter-removebg-preview.png') }}" alt="" class="">
+            </a>
+
+
+        </div>
+
+        <div id="Baysitting">
+            <span class="Round_writing"> Baysitting </span>
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/babysitter-removebg-preview.png') }}" alt="" class="">
+
+            </a>
+        </div>
+
+        <div id="Privatelessons">
+            <span class="Round_writing">Privatelessons</span>
+            <a class =imgButton type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/privatelessons.png') }}" alt="" class="">
+
+
+            </a>
+        </div>
+
+        <div id="Cooking">
+            <span class="Round_writing">Cooking</span>
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/Cooking-removebg-preview.png') }}" alt="" class="">
+            </a>
+        </div>
+
+        <div id="Movingservices">
+            <span class="Round_writing"> Movingservices </span>
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/Movingservices-removebg-preview.png') }}" alt="" class="">
+            </a>
+        </div>
+
+        <div id="MusicLessons">
+            <span class="Round_writing"> MusicLessons </span>
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/musicLessons.png') }}" alt="" class="">
+            </a>
+        </div>
+
+        <div id="HandyMan">
+            <span class="Round_writing"> HandyMan </span>
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/handyman-removebg-preview.png') }}" alt="" class="">
+            </a>
+        </div>
+
+        <div id="Gardening">
+            <span class="Round_writing"> Gardening </span>
+            <a class="imgButton" type="button" href="/Contact_info" onclick="">
+                <img src="{{ url_for('find_me_a_pro.static', filename='media/Gardening-removebg-preview.png') }}" alt="" class="">
+            </a>
+        </div>
+    </main>
+
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('find_me_a_pro.static', filename='js/find_me_a_pro.js') }}"></script>
+{% endblock %}
+

@@ -1,0 +1,50 @@
+body{
+    background: #36B3B8;
+    color: white;
+    font-family: Terbuchet, sans-serif;
+    font-size: 20px;
+}
+
+#house{
+    width: 70px;
+    background: none;
+    border: none;
+}
+
+#babysitter{
+    font-size: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.person{
+    width: 70px;
+    background: none;
+    border: none;
+    margin-right: 10px;
+}
+
+.contact {
+            margin-bottom: 20px;
+            margin-left: 40px;
+            border: 4px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+   .contact-details {
+            flex-grow: 1;
+        }
+
+ .choose-btn {
+            background-color: #A7F0BA;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            padding: 20px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
